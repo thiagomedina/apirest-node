@@ -5,9 +5,9 @@ module.exports = {
   host: 'localhost',
   dialect: 'mysql',
   define: {
-    timestamps: true,
-    undersored: true,
-    undersoredAll:true
+    timestamps: false,
+    undersored: false,
+    undersoredAll:false
   }
 
 
