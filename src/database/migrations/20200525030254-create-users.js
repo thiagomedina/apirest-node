@@ -15,19 +15,17 @@ module.exports = {
       name: { 
         type: Sequelize.STRING,
         allowNull: false,
-        defaultValue: "vazio"
       },
       email: {
         type: Sequelize.STRING,
         allowNull: false,
         unique: false,
-        defaultValue: "vazio"
 
       },
       password_hash: {
         type: Sequelize.STRING,
         allowNull: false,
-        defaultValue: "vazio"
+        
 
       },
       create_at: {
