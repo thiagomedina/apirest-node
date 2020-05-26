@@ -8,29 +8,39 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false,
         autoIncrement: true,
-        primaryKey: true
+        primaryKey: true,
+
 
       },
-      name: {
+      name: { 
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
+        defaultValue: "vazio"
       },
       email: {
         type: Sequelize.STRING,
         allowNull: false,
-        unique: true
+        unique: false,
+        defaultValue: "vazio"
+
       },
       password_hash: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
+        defaultValue: "vazio"
+
       },
       create_at: {
-        type: Sequelize.DATE,
+        type: Sequelize.DATEONLY,
         allowNull: true,
+        defaultValue: Sequelize.NOW
+
       },
       updated_at: {
-        type: Sequelize.DATE,
+        type: Sequelize.DATEONLY,
         allowNull: true,
+        defaultValue:Sequelize.NOW
+
       }
     });
 
